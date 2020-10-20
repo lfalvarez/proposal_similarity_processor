@@ -1,10 +1,6 @@
 =============================
-proposal_similarity_processor
+Proposal Similarity Processor
 =============================
-
-
-.. image:: https://img.shields.io/pypi/v/proposal_similarity_processor.svg
-        :target: https://pypi.python.org/pypi/proposal_similarity_processor
 
 .. image:: https://img.shields.io/travis/lfalvarez/proposal_similarity_processor.svg
         :target: https://travis-ci.com/lfalvarez/proposal_similarity_processor
