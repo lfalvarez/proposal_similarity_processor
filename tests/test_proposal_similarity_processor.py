@@ -6,9 +6,10 @@
 import unittest
 
 from proposal_similarity_processor import proposal_similarity_processor
+from proposal_similarity_processor.document import Document
 
 
-class TestProposal_similarity_processor(unittest.TestCase):
+class TestProposalDocument(unittest.TestCase):
     """Tests for `proposal_similarity_processor` package."""
 
     def setUp(self):
@@ -17,6 +18,9 @@ class TestProposal_similarity_processor(unittest.TestCase):
     def tearDown(self):
         """Tear down test fixtures, if any."""
 
-    def test_000_something(self):
+    def test_instanciate(self):
         """Test something."""
-        self.assertTrue(True)
+        document = Document(id=1, content='hola esto es una prueba')
+        self.assertTrue(document)
+        self.assertEqual(1, document.id)
+        self.assertEqual('hola esto es una prueba', document.content)
