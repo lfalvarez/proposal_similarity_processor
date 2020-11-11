@@ -19,3 +19,4 @@ class BETOSearchEngine(AbstractSearchEngine):
 
     def vectorize(self, text):
         all_words = self.get_entire_phrase_vectorized(text)
+        return all_words[0].mean(0).detach().numpy()
