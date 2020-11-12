@@ -98,9 +98,12 @@ ENV/
 # mkdocs documentation
 /site
 
-# mypy
+# mypyp
 .mypy_cache/
 
 # IDE settings
 .vscode/
 .idea/
+
+pytorch/
+
