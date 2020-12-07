@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ae2982c2-ae82-4871-8c38-1836ba1b4b77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proposal_similarity_processor/BETO_search_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/proposal_similarity_processor/BETO_search_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proposal_similarity_processor/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/proposal_similarity_processor/cli.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proposal_similarity_processor/similarity_searcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/proposal_similarity_processor/similarity_searcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_proposal_similarity_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_proposal_similarity_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_similarity_searcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_similarity_searcher.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_find_closest">
+  <component name="RunManager" selected="Python tests.Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_given_a_document_find_the_closest">
     <configuration name="Unittests for test_similarity_searcher.SimilaritySearcherTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="proposal_similarity_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,6 +77,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_given_a_document_find_the_closest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="proposal_similarity_processor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_similarity_searcher.SimilaritySearcherTestCase.test_given_a_document_find_the_closest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_it_vectorizes_documents" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="proposal_similarity_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_given_a_document_find_the_closest" />
         <item itemvalue="Python tests.Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_find_closest" />
         <item itemvalue="Python tests.Unittests for test_similarity_searcher.SimilaritySearcherTestCase" />
         <item itemvalue="Python tests.Unittests for test_similarity_searcher.SimilaritySearcherTestCase.test_it_vectorizes_documents" />
