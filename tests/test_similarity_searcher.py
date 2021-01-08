@@ -40,5 +40,14 @@ class SimilaritySearcherTestCase(TestCase):
         searcher.add_document(Document(id=2, content='this is another content'))
 
         text = 'this content' ## should be closest to "this is a content" because it does not have "another" into its words
-        expected_id = searcher.get_closest(text)
-        self.assertEquals(expected_id, 1)
+        expected_id = searcher.get_closest(text, 1)
+        self.assertEquals(expected_id, [1])
+
+    def test_given_a_document_find_the_closest(self):
+        searcher = SimilaritySearcher(TestEngine)
+        searcher.add_document(Document(id=1, content='this is a content'))
+        searcher.add_document(Document(id=2, content='this is another content'))
+
+        result = searcher.get_closest_doc(2, 1)
+        self.assertEquals(result, [2])
+

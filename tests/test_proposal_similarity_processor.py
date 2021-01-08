@@ -5,7 +5,6 @@
 
 import unittest
 
-from proposal_similarity_processor import proposal_similarity_processor
 from proposal_similarity_processor.document import Document
 
 
