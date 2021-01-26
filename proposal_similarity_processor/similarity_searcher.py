@@ -17,13 +17,13 @@ class SimilaritySearcher():
         self.index_document_id_relations[next_index] = document_index
         self.document_id_index_relations[str(document_index)] = next_index
 
-    def find_nearest(self, value: [int], k:int) -> [int]:
+    def find_nearest(self, value: [[int]], k:int) -> [int]:
         docs = np.asarray(self.documents)
         distances = cdist(docs, np.atleast_2d(value), self.distance_type).transpose()
         return np.argpartition(distances, k)[0]
 
-    def get_closest(self, text:str, k:int):
-        vectorized_input = self.search_engine.vectorize(text)
+    def get_closest(self, texts:[str], k:int):
+        vectorized_input = np.asarray([self.search_engine.vectorize(text) for text in texts])
         index = self.find_nearest(vectorized_input, k)
         closest_element_indexes = np.asarray(index)
         indexes = []
@@ -31,10 +31,10 @@ class SimilaritySearcher():
             indexes.append(self.index_document_id_relations[index])
         return indexes[0:k]
 
-    def get_closest_doc(self, id:int, k: int):
-        document_index_position = self.document_id_index_relations[str(id)]
-        vectorized_input = self.documents[document_index_position]
-        closest_indexes = self.find_nearest(vectorized_input, k)
+    def get_closest_doc(self, ids:[int], k: int):
+        document_index_positions = [self.document_id_index_relations[str(id)] for id in ids]
+        vectorized_inputs = [self.documents[document_index_position] for document_index_position in document_index_positions]
+        closest_indexes = self.find_nearest(vectorized_inputs, k)
         doc_ids = []
         for index in closest_indexes:
             doc_ids.append(self.index_document_id_relations[index])
